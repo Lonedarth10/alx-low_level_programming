@@ -6,9 +6,9 @@
  *
  * Return: the number of nodes in the list.
  */
-size_t listint_len(const listint_t *h)
+size_t print_listint(const listint_t *h)
 {
-	size_t num_nodes = 0;
+	size_t numnodes = 0;
 
 	while (h != NULL)
 	{
@@ -16,7 +16,6 @@ size_t listint_len(const listint_t *h)
 		h = h->next;
 		nnodes++;
 	}
-	
-	return (num_nodes);
+	return (numnodes);
 }
 
